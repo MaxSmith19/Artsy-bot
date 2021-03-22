@@ -6,6 +6,9 @@ import asyncio
 
 bot = discord.Client()
 
+with open("NotToken.txt") as file:
+    TOKEN=file.readline()
+
 botTesting=bot.get_channel(821435572891287603)
 rules=bot.get_channel(821433342632788018)
 
@@ -34,4 +37,4 @@ async def on_reaction_add(reaction, user):
         await bot.add_roles(user.name, role)
 
 
-bot.run('')   
+bot.run(TOKEN)   
