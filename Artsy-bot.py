@@ -34,4 +34,4 @@ async def on_reaction_add(reaction, user):
         await bot.add_roles(user.name, role)
 
 
-bot.run('ODIxNDQwOTcyNzMzODA4NzEy.YFDwhQ.eKzk5nhM5ieq4QpOXkJNegvwXaE')   
+bot.run('')   
